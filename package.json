@@ -1,0 +1,27 @@
+{
+  "name": "job-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "aws-cdk-lib": "2.62.2",
+    "constructs": "10.1.156",
+    "sst": "^2.2.1",
+    "typescript": "^5.0.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.1338.0"
+  }
+}

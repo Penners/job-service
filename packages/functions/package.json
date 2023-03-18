@@ -1,0 +1,17 @@
+{
+  "name": "@job-service/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.3",
+    "sst": "^2.2.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1338.0"
+  }
+}
