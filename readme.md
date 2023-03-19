@@ -1,6 +1,6 @@
 Simple Async HTTP event callbacks for serverless job execution.
 
-Designed to be invoked tasks for that'd take longer than a normal response cycle. Not designed for tasks of over 30 seconds.
+Designed to be invoked for tasks that'd take longer than a normal response cycle. Not designed for truely long running tasks of spanning multiple minutes. 
 Examples include running a vercel cron then queuing up time consuming tasks that can be completed asynchronously via HTTP callback.
 
 Current use case is to
