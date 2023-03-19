@@ -6,7 +6,6 @@ export function API({ stack }: StackContext) {
     cdk: {
       queue: {
         fifo: true,
-        contentBasedDeduplication: true,
       },
     },
   });
@@ -17,7 +16,7 @@ export function API({ stack }: StackContext) {
       },
     },
     routes: {
-      "POST /": "packages/functions/src/lambda.handler",
+      "POST /bulkAddJobs": "packages/functions/src/lambda.bulkAddJobs",
     },
   });
   stack.addOutputs({
