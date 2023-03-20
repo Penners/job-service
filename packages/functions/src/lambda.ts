@@ -39,8 +39,6 @@ export const bulkAddJobs = ApiHandler(async (_evt) => {
         .digest("hex");
       messageMap.set(messageId, {
         Id: messageId,
-        MessageGroupId: "Http:Callbacks",
-        MessageDeduplicationId: messageId,
         MessageBody: messageBody,
       });
     });
